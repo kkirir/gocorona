@@ -14,12 +14,24 @@
     &_blue span {
       color: #4285f4;
     }
+    &_center{
+      text-align: center;
+    }
+    
   }
 
   &__text {
     line-height: 138.5%;
     &:not(:last-child){
         margin: 0 0 24px 0;
+    }
+    &_max-width{
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    &_center{
+      text-align: center;
     }
   }
 

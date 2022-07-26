@@ -2,8 +2,18 @@
   [class*="__container"] {
     max-width: 970px;
   }
-}
 
+  .healthcare__column {
+    padding: 0px 15px;
+  }
+}
+@media (min-width: 991.98px) {
+  .stay-safe {
+    &__media {
+      padding: 0 0 0 47px;
+    }
+  }
+}
 @media (max-width: 991.98px) {
   [class*="__container"] {
     max-width: 750px;
@@ -29,6 +39,19 @@
       &::before {
         right: 185px;
       }
+    }
+  }
+  .stay-safe {
+    padding: 40px 0;
+  }
+
+  .healthcare{
+    padding: 30px 0 30px 0;
+  }
+  .healthcare__column {
+    flex-direction: column;
+    &:not(:last-child){
+      margin-bottom: 25px;
     }
   }
 }
@@ -137,34 +160,109 @@
 
   .get-started {
     &__container {
-        padding: 100px 15px 30px 15px;
+      padding: 100px 15px 30px 15px;
       &::before {
         display: none;
       }
     }
-    &__block-text{
-        max-width: none;
+    &__block-text {
+      max-width: none;
     }
-    &__content{
-        flex: 1 1 100%;
-        padding: 0;
+    &__content {
+      flex: 1 1 100%;
+      padding: 0;
     }
-    &__image{
-        flex: 1 1 100%;
-        text-align: center;
-        padding: 30px 0;
+    &__image {
+      flex: 1 1 100%;
+      text-align: center;
+      padding: 30px 0;
     }
-    &__video{
-        padding: 0;
+    &__video {
+      padding: 0;
     }
-    
   }
-  .block-text{
-    &__title{
-        font-size: 34px;
+  .block-text {
+    &__title {
+      font-size: 34px;
+    }
+  }
+  .stay-safe {
+    &__container {
+      flex-direction: column-reverse;
+      padding: 0;
+    }
+    &__content {
+      margin: 0 0 30px 0;
+    }
+  }
+
+  .experts {
+    padding: 80px 0px 30px 0px;
+    &__container {
+    }
+
+    &__statistics {
+    }
+
+    &__body {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    &__content {
+      padding: 0;
+      margin-bottom: 30px;
+    }
+
+    &__block-text {
+    }
+
+    &__video {
+      padding: 0 0 58% 0;
+    }
+  }
+  .statistics-experts {
+    &__body {
+      margin-bottom: 50px;
+    }
+
+    &__decor {
+      &_1 {
+      }
+
+      &_2 {
+      }
+
+      &_3 {
+      }
+    }
+  }
+  .body-statistics-experts {
+    padding: 25px;
+
+    &__item {
+    }
+
+    &__value {
+    }
+
+    &__text {
+    }
+  }
+  .block-text {
+    &__title {
+      &_blue {
+      }
+    }
+
+    &__text {
+    }
+
+    &__button {
     }
   }
 }
+
 
 @media (max-width: 479.98px) {
   .header {
@@ -172,5 +270,14 @@
       flex: 0 0 40px;
       overflow: hidden;
     }
+  }
+  .media-stay-safe {
+    width: 290px;
+  }
+  .body-statistics-experts {
+    flex-direction: column;
+  }
+  .body-statistics-experts__item:not(:last-child) {
+    margin-bottom: 15px;
   }
 }

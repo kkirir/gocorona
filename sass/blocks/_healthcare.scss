@@ -1,0 +1,105 @@
+.healthcare {
+  padding: 80px 0px 30px 0px;
+  &__block-text {
+    margin: 0px 0px 45px 0px;
+  }
+  &__items {
+    display: flex;
+  }
+  &__column {
+    position: relative;
+    padding: 0px 36px;
+    flex: 0 1 33.333%;
+    &_1 {
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        background-color: #ec5863;
+        border-radius: 16px;
+      }
+      &::before {
+        width: 65px;
+        height: 65px;
+        bottom: -35px;
+        left: 15px;
+        transform: rotate(-30deg);
+      }
+      &::after {
+        width: 97px;
+        height: 97px;
+        top: 35px;
+        right: -10px;
+        border-radius: 30px;
+        transform: rotate(30deg);
+      }
+    }
+    &_2::after {
+      content: "";
+      position: absolute;
+      background-color: #ec5863;
+      width: 127px;
+      height: 127px;
+      bottom: -35px;
+      right: -35px;
+      border-radius: 30px;
+      transform: rotate(55deg);
+    }
+    &_3::after {
+      content: "";
+      position: absolute;
+      background-color: #ec5863;
+      width: 65px;
+      height: 65px;
+      top: -25px;
+      right: 10px;
+      border-radius: 16px;
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.item-healthcare {
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  background: #ffffff;
+  box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 35px 17px;
+  &__icon {
+    margin: 0px 0px 58px 0px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 138.5%;
+    color: #000;
+    margin: 0px 0px 4px 0px;
+  }
+  &__text {
+    line-height: 138.5%;
+  }
+}
+
+
+@media (max-width: 1087px) {
+	.healthcare__column {
+		padding: 0px 15px;
+	}
+}
+@media (max-width: 991.98px) {
+	.healthcare {
+		padding: 30px 0px 30px 0px;
+	}
+	.healthcare__items {
+		flex-direction: column;
+	}
+	.healthcare__column:not(:last-child) {
+		margin: 0px 0px 25px 0px;
+	}
+}
